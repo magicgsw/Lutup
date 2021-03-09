@@ -28,7 +28,6 @@ def fristlogin():
                 break
         except Exception as e:
             print(e)
-            print('网络问题，等待10S！)
             time.sleep(10)
 
 def register_email(token):
