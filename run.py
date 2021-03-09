@@ -5,6 +5,7 @@ if  "TG_USER_ID" in os .environ and os .environ ["TG_USER_ID"]:#line:13
         TG_BOT_TOKEN ='1698539466:AAHqZNARtVq2MJiFQIcygSxEjVDGpOJjY5k'#line:14
         TG_USER_ID =os .environ ["TG_USER_ID"]#line:15
         print ("Telegram 推送打开")#line:16
+
 def fristlogin():
     a='bdEH5jnTfBaGhFywTMIscbf{a}w{b}i{c}{d}{e}P/w2SIZlbirzi7yJ2m'.format(a=random.randint(1, 9),b=random.randint(1, 9),c=random.choice('ABCDEFG'),d=random.choice('ABCDEFGH'),e=random.choice('ABCDEFG'))
     ploy={
@@ -60,7 +61,17 @@ def invite(token):
     #print(url)
     result=requests.post(url,files=fils)
     print(result.text)
-    telegram_bot('撸先生', '邀请完成！手动去兑换会员吧！')
+    choice_vip()
+def choice_vip():
+
+    if TOKEN in os.environ:
+        mytoken=os.environ["Token"]
+        url='https://pwb.sjzrongshida.cn/v1/lottery/1?token={}'.format(mytoken)
+        s=requests.post(url)
+        time.sleep(2)
+        telegram_bot('撸先生', '邀请完成！随机抽奖完成！')
+    else:
+        telegram_bot('撸先生', '邀请完成！未开启随机抽奖！（需要抽奖请填写TOKEN)')
 def main():
     token = fristlogin()
     time.sleep(5)
