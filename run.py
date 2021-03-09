@@ -19,6 +19,7 @@ def fristlogin ():#line:10
                 break #line:30
         except Exception as O00OOOOOO0000OO0O :#line:31
             print (O00OOOOOO0000OO0O )#line:32
+            print(O0O0O0O00OOOOO00O)
             time .sleep (10 )#line:33
     else :#line:34
         print ('网络问题，等待下一次邀请！')#line:35
