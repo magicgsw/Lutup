@@ -9,7 +9,7 @@ def fristlogin ():#line:10
     O00OOOO0OOOOO0000 ={'Accept':'application/json, text/plain, */*','Accept-Encoding':'gzip, deflate, br','Accept-Language':'zh-cn','Connection':'keep-alive','Host':'pwb.wubabanjia.net','Origin':'https://web.wubabanjia.net','User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E176 Safari/604.1','X-AFDAC809-9AD768A3':O000OO0OO000000OO }#line:20
     O00OOO0000OO0O000 ='https://pwb.wubabanjia.net/v1/fastlogin'#line:21
     O0O0O0O00OOOOO00O =0 #line:22
-    while O0O0O0O00OOOOO00O <=5 :#line:23
+    while O0O0O0O00OOOOO00O <=10 :#line:23
         O0O0O0O00OOOOO00O +=1 #line:24
         try :#line:25
             OOO0000OOOOOO0O0O =requests .get (O00OOO0000OO0O000 ,headers =O00OOOO0OOOOO0000 )#line:26
