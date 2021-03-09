@@ -1,4 +1,4 @@
-import requests,random,time
+import requests,random,time,os
 TG_BOT_TOKEN =''#line:11
 TG_USER_ID =''#line:12
 if  "TG_USER_ID" in os .environ and os .environ ["TG_USER_ID"]:#line:13
