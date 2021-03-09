@@ -18,14 +18,16 @@ def fristlogin():
         'Origin': 'https://web.wubabanjia.net',
         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E176 Safari/604.1',
         'X-AFDAC809-9AD768A3':a}
-    try:
-        result=requests.get(url='https://pwb.wubabanjia.net/v1/fastlogin',headers=ploy).json()
-        #print(result['response']['token'])
-        return result['response']['token']
-    except Exception as e:
-        print(e)
-        telegram_bot('撸先生','失败！大概率网络不好，等待下一次邀请！')
-        exit()
+    url='https://pwb.wubabanjia.net/v1/fastlogin'
+    while True:
+        try:
+            result=requests.get(url,headers=ploy)
+            if result.status_code==200:
+                print( result.json()['response']['token'])
+                break
+        except Exception as e:
+            print(e)
+            time.sleep(2)
 
 def register_email(token):
     email='{}@qq.com'.format(random.randint(1000000,99999999))
