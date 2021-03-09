@@ -38,7 +38,7 @@ def main ():#line:84
         time .sleep (5 )#line:88
         invite (O00000OO00OOOO0OO )#line:89
     else:
-        telegram_bot ('撸先生','没有启动码，请去188极速列车公众号获取！')#li
+        telegram_bot ('撸先生','没有启动码，请去188极速列车公众号查看文章获取！')#li
 def telegram_bot (O0O0O0OOOOOOO0O00 ,O0O00O000000O0O00 ):#line:50
     print ("\n")#line:51
     O0OOO0000OOOO0OO0 =TG_BOT_TOKEN #line:52
