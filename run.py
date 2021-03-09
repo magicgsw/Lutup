@@ -19,7 +19,9 @@ def fristlogin():
         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E176 Safari/604.1',
         'X-AFDAC809-9AD768A3':a}
     url='https://pwb.wubabanjia.net/v1/fastlogin'
-    while True:
+    n=0
+    while n<=5:
+        n+=1
         try:
             result=requests.get(url,headers=ploy)
             if result.status_code==200:
