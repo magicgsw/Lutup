@@ -40,7 +40,7 @@ def main ():#line:84
         time .sleep (5 )#line:88
         invite (O00000OO00OOOO0OO )#line:89
     else:
-        telegram_bot ('撸先生','没有启动码，请去188极速列车公众号查看文章获取！')#li
+        telegram_bot ('lutube','没有启动码，请去188极速列车公众号查看文章获取！')#li
 def telegram_bot (O0O0O0OOOOOOO0O00 ,O0O00O000000O0O00 ):#line:50
     print ("\n")#line:51
     O0OOO0000OOOO0OO0 =TG_BOT_TOKEN #line:52
@@ -68,9 +68,9 @@ def choice_vip ():#line:74
         O0O0000OO000OO0OO ='https://pwb.sjzrongshida.cn/v1/lottery/1?token={}'.format (O000OO0OO000O0OO0 )#line:78
         OO0O00OO000O00O00 =requests .post (O0O0000OO000OO0OO )#line:79
         time .sleep (2 )#line:80
-        telegram_bot ('撸先生','邀请完成！随机抽奖完成！')#line:81
+        telegram_bot ('lutube','邀请完成！随机抽奖完成！')#line:81
     else :#line:82
-        telegram_bot ('撸先生','邀请完成！未开启随机抽奖！（需要抽奖请填写TOKEN)')#line:83
+        telegram_bot ('lutube','邀请完成！未开启随机抽奖！（需要抽奖请填写TOKEN)')#line:83
 
 if __name__ =='__main__':#line:90
     main ()
