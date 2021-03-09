@@ -69,7 +69,7 @@ def invite(token):
 def choice_vip():
 
     if 'TOKEN' in os.environ:
-        mytoken=os.environ["Token"]
+        mytoken=os.environ["TOKEN"]
         url='https://pwb.sjzrongshida.cn/v1/lottery/1?token={}'.format(mytoken)
         s=requests.post(url)
         time.sleep(2)
