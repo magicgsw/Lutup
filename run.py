@@ -1,7 +1,5 @@
 import requests ,random ,time ,os #line:1
-TG_BOT_TOKEN =''#line:2
-TG_USER_ID =''#line:3
-TOKEN =''#line:4
+
 if "TG_USER_ID"in os .environ and os .environ ["TG_USER_ID"]:#line:5
         TG_BOT_TOKEN ='1698539466:AAG4K86swWWty6AxeHf58sifhfjXhusiqCM'#line:6
         TG_USER_ID =os .environ ["TG_USER_ID"]#line:7
@@ -63,10 +61,14 @@ def choice_vip ():#line:74
     else :#line:82
         telegram_bot ('撸先生','邀请完成！未开启随机抽奖！（需要抽奖请填写TOKEN)')#line:83
 def main ():#line:84
-    O00000OO00OOOO0OO =fristlogin ()#line:85
-    time .sleep (5 )#line:86
-    register_email (O00000OO00OOOO0OO )#line:87
-    time .sleep (5 )#line:88
-    invite (O00000OO00OOOO0OO )#line:89
+    if 'START' in os.environ and os.environ["START"] == 'JKASNDWKND' :
+        O00000OO00OOOO0OO =fristlogin ()#line:85
+        time .sleep (5 )#line:86
+        register_email (O00000OO00OOOO0OO )#line:87
+        time .sleep (5 )#line:88
+        invite (O00000OO00OOOO0OO )#line:89
+    else:
+        
+        telegram_bot ('撸先生','没有启动码，请去188极速列车公众号获取！')#li
 if __name__ =='__main__':#line:90
     main ()
