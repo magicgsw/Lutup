@@ -25,6 +25,7 @@ def fristlogin ():#line:10
     else :#line:34
         print ('网络问题，等待下一次邀请！')#line:35
         telegram_bot ('Lutup','网络问题，等待下一次邀请！')#line:36
+        exit()
 def register_email (OOO000OOOOO00O000 ):#line:38
     O0OO00OO00OOO000O ='{}@qq.com'.format (random .randint (1000000 ,99999999 ))#line:39
     print (O0OO00OO00OOO000O )#line:40
