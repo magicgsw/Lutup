@@ -23,7 +23,8 @@ def fristlogin():
         try:
             result=requests.get(url,headers=ploy)
             if result.status_code==200:
-                print( result.json()['response']['token'])
+                print(result.json()['response']['token'])
+                return result.json()['response']['token']
                 break
         except Exception as e:
             print(e)
