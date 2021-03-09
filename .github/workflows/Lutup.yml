@@ -34,6 +34,7 @@ jobs:
           TG_USER_ID:  ${{secrets.TG_USER_ID}}    # tg通知id
           INVITECODE: ${{secrets.INVITECODE}}
           TOKEN: ${{secrets.TOKEN}}
+          START: ${{secrets.START}}
           
           
           
