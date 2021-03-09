@@ -14,7 +14,8 @@ def fristlogin ():#line:10
         try :#line:25
             OOO0000OOOOOO0O0O =requests .get (O00OOO0000OO0O000 ,headers =O00OOOO0OOOOO0000 )#line:26
             if OOO0000OOOOOO0O0O .status_code ==200 :#line:27
-                print (OOO0000OOOOOO0O0O .json ()['response']['token'])#line:28
+                #print (OOO0000OOOOOO0O0O .json ()['response']['token'])#line:28
+                print(O0O0O0O00OOOOO00O)
                 return OOO0000OOOOOO0O0O .json ()['response']['token']#line:29
                 break #line:30
         except Exception as O00OOOOOO0000OO0O :#line:31
