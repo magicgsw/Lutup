@@ -28,7 +28,8 @@ def fristlogin():
                 break
         except Exception as e:
             print(e)
-            time.sleep(2)
+            print('网络问题，等待10S！)
+            time.sleep(10)
 
 def register_email(token):
     email='{}@qq.com'.format(random.randint(1000000,99999999))
